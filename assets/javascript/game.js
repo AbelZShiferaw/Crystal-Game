@@ -4,6 +4,7 @@ $(document).ready(function() {
 	var wins =0;
 	var loses = 0;
 	var gamerNumber = 0;
+	var gamesPlayed = 0;
 
 	// number generation
 	var randomNumber = Math.floor((Math.random() * 101) + 19);
@@ -69,11 +70,15 @@ $(document).ready(function() {
 		var check = function() {
 			if (randomNumber == gamerNumber) {
 				wins++;
+				gamesPlayed++;
 				$('#wins').html(wins);
+				$('#gamesPlayed').html(gamesPlayed);
 				newGame();
 			} else if (randomNumber < gamerNumber) {
+				gamesPlayed++;
 				loses++;
 				$('#loses').html(loses);
+				$('#gamesPlayed').html(gamesPlayed);
 				newGame();
 			}
 		}
