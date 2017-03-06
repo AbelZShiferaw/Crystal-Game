@@ -1,0 +1,47 @@
+
+
+body {
+
+	background: linear-gradient(black, darkred, red, orange, white);
+
+	//background-image: url("Background.jpg");
+
+}
+
+.page-header{
+	color: white;
+	
+
+}
+h{
+	border-bottom: 6px solid red;
+    background-color: lightgrey;
+}
+h4 h3 {color: #FF1F52; }
+
+.panel-body{
+	background-color: ;
+
+}
+
+#wins {
+	font-style: bold;
+	font-size: 14px;
+	color: green;
+}
+
+#loses {
+	font-size: 14px;
+	color: red;
+}
+
+#gamesPlayed {
+	font-size: 14px;
+	color: green;
+}
+
+#random-number {
+	font-style: bold;
+	font-size: 14px;
+	color: green;
+}
